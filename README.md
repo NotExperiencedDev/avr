@@ -1,4 +1,4 @@
-# avr
+# avr ATTiny10
 It is very simple project (blinking led) with ATMEL/CHIP AVR ATTiny10 (6 pin, very small). 
 This project has basically 2 files - main.c, main.h
 the main.h contains some defined helpers (to set 0 or 1 on selected port, to setup ports)
