@@ -1,0 +1,18 @@
+
+main.o: clean main.c
+	avr-gcc -c -mmcu=attiny10 -O main.c -Wa,-ahls=main.lst
+
+obj: main.o
+	avr-gcc -mmcu=attiny10 -o main.elf main.o
+
+hex: obj
+	avr-objcopy -j .text -j .data -O ihex main.elf main.hex
+
+load: hex
+	avrdude -c usbasp -B12 -p attiny10 -U flash:w:main.hex:i
+
+clean:
+	rm -f *.o
+	rm -f *.lst
+	rm -f *.elf
+	rm -f *.hex

@@ -1,0 +1,56 @@
+GAS LISTING /tmp/cc87Aose.s 			page 1
+
+
+   1               		.file	"main.c"
+   2               	__SP_H__ = 0x3e
+   3               	__SP_L__ = 0x3d
+   4               	__SREG__ = 0x3f
+   5               	__CCP__ = 0x3c
+   6               	__tmp_reg__ = 16
+   7               	__zero_reg__ = 17
+   8               		.text
+   9               	.global	main
+  10               		.type	main, @function
+  11               	main:
+  12               	/* prologue: function */
+  13               	/* frame size = 0 */
+  14               	/* stack size = 0 */
+  15               	.L__stack_usage = 0
+  16 0000 41B1      		in r20,0x1
+  17 0002 4660      		ori r20,lo8(6)
+  18 0004 41B9      		out 0x1,r20
+  19 0006 129A      		sbi 0x2,2
+  20               	.L2:
+  21 0008 129A      		sbi 0x2,2
+  22 000a 4FE4      		ldi r20,lo8(-15537)
+  23 000c 53EC      		ldi r21,hi8(-15537)
+  24 000e 4150      	1:	subi r20,1
+  25 0010 5040      		sbci r21,0
+  26 0012 01F4      		brne 1b
+  27 0014 00C0      		rjmp .
+  28 0016 0000      		nop
+  29 0018 1298      		cbi 0x2,2
+  30 001a 4FE4      		ldi r20,lo8(-15537)
+  31 001c 53EC      		ldi r21,hi8(-15537)
+  32 001e 4150      	1:	subi r20,1
+  33 0020 5040      		sbci r21,0
+  34 0022 01F4      		brne 1b
+  35 0024 00C0      		rjmp .
+  36 0026 0000      		nop
+  37 0028 00C0      		rjmp .L2
+  38               		.size	main, .-main
+  39               		.ident	"GCC: (GNU) 4.9.2"
+GAS LISTING /tmp/cc87Aose.s 			page 2
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 main.c
+     /tmp/cc87Aose.s:2      *ABS*:000000000000003e __SP_H__
+     /tmp/cc87Aose.s:3      *ABS*:000000000000003d __SP_L__
+     /tmp/cc87Aose.s:4      *ABS*:000000000000003f __SREG__
+     /tmp/cc87Aose.s:5      *ABS*:000000000000003c __CCP__
+     /tmp/cc87Aose.s:6      *ABS*:0000000000000010 __tmp_reg__
+     /tmp/cc87Aose.s:7      *ABS*:0000000000000011 __zero_reg__
+     /tmp/cc87Aose.s:11     .text:0000000000000000 main
+
+NO UNDEFINED SYMBOLS
