@@ -14,7 +14,7 @@ and
 To load program i'm using USBASP v 2.0
 All done on Linux Mint, in VSCODE, midnight comander, avr gcc
 
-After connecting everything (as on the page from second link) i used command (in project folder):
+After connecting everything (as on the page from the second link) i used command (in project folder):
   makefile -f Makefile-1 load
 
 My makefile is done manually so it is very simple and easy. All uses avr-gcc compiler and avrdude loader.
