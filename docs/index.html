@@ -3,7 +3,10 @@
 
 <head>
     <style>
-        h1{color: white; }
+        h1 {
+            color: white;
+        }
+        
         body {
             background-color: black
         }
@@ -19,14 +22,29 @@
             font-family: courier;
             font-size: 60%;
         }
+        
+        a:link {
+            color: white;
+            background-color:transparent;
+        }
 
-        href { color: white; }
+        a:visited {
+            color:pink; 
+        background-color:transparent; 
+        text-decoration:none}
+a:hover   {
+    color:red; 
+    background-color:transparent; 
+    text-decoration:none}
+a:active  {
+    color:yellow; 
+    background-color:transparent;
+     text-decoration:underline}
+
     </style>
 </head>
-
 <body>
-    <h1>AVR ATTiny10 with USBASP v 2.0 and avrdude
-        <h1>
+    <h1>AVR ATTiny10 with USBASP v 2.0 and avrdude        <h1>
             <div>
                 <p> It is very simple project (blinking led) with ATMEL/CHIP AVR ATTiny10 (6 pin, very small). This project has
                     basically 2 files - main.c, main.h the main.h contains some defined helpers (to set 0 or 1 on selected
