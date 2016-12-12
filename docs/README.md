@@ -18,3 +18,6 @@ After connecting everything (as on the page from second link) i used command (in
   makefile -f Makefile-1 load
 
 My makefile is done manually so it is very simple and easy. All uses avr-gcc compiler and avrdude loader.
+
+Few photos attached as a proof. I'm aware how badly it looks, but it works
+and it was assembled in 20 minutes (It felt like ages anyway).
